@@ -1,0 +1,637 @@
+* {
+	box-sizing: border-box;
+}
+.navigation{
+	display: none;
+}
+
+.nav-trigger{
+	display: none;
+}
+
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url("img/nav-background.jpg");
+	background-attachment: fixed;
+}
+
+header p {
+	font-family: "arial";
+	font-style: italic;
+}
+
+h2::first-letter {
+	color: white;
+}
+
+p, h2 {
+	font-family: "arial";
+}
+h3, h4{
+	font-family: "tahoma";
+}
+
+a:link,
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#hamburgernav{
+	dipslay:none;
+}
+
+body > .site-wrap > header > .menu {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: black;
+	opacity: 0.8;
+	/* box-shadow: 4px 4px 4px #000; */
+	/* justify-content: flex-start; */
+}
+body > .site-wrap > header > .menu > nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+body > .site-wrap > header > .menu > nav > ul > li {
+	margin-left: 34px;
+	margin-right: 34px;
+	font-family: arial;
+	font-size: 1.1em;
+	list-style: none;
+
+}
+body > .site-wrap > header > .menu > nav > ul > li > a:hover{
+	color: grey;
+	border-bottom: 2px solid #2e3979;
+}
+
+body > .site-wrap > header > .menu > img {/*transition*/
+ -webkit-transition-duration: 0.8s;/*firefox*/
+ -moz-transition-duration: 0.8s;/*mozilla*/
+ -o-transition-duration: 0.8s;/*Opera*/
+ transition-duration: 0.8s;
+ 
+ -webkit-transition-property: -webkit-transform;
+ -moz-transition-property: -moz-transform;
+ -o-transition-property: -o-transform;
+ transition-property: transform;
+ 
+ overflow:hidden;
+ margin: 5px;
+ width: 40px;
+ height: 40px;
+ } 
+ 
+body > .site-wrap > header > .menu > img:hover /*pseudo-class*/
+{ 
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg); 
+ -o-transform:rotate(360deg);
+}
+
+body > .site-wrap > header > .begin {
+	float: right;
+	background-color: white;
+	width: 50%;
+	height: 690px;
+	margin-top: -55px;
+	padding: 40px;
+}
+
+body > .site-wrap > header > .begin > h1 {
+	font-family: "arial";
+	font-size: 2.3em;
+	text-shadow: 1px 1px 1px #000;
+	margin-top: 110px;
+}
+
+body > .site-wrap > header > .begin > form {
+	font-family: "arial";
+	font-size: 1.5em;
+	margin-top: 80px;
+	text-align: center;
+}
+body > .site-wrap > header > .begin > form > label > .search {
+	height: 40px;
+	width: 160px;
+}
+body > .site-wrap > header > .begin > img {
+	height: 180px;
+	width: 270px;
+	float: right;
+	margin-top: 80px;
+	opacity: 0.9;
+	-webkit-transition-duration: 0.8s;/*firefox*/
+ 	-moz-transition-duration: 0.8s;/*mozilla*/
+ 	-o-transition-duration: 0.8s;/*Opera*/
+ 	transition-duration: 0.8s;
+ 
+ 	-webkit-transition-property: -webkit-transform;
+ 	-moz-transition-property: -moz-transform;
+ 	-o-transition-property: -o-transform;
+ 	transition-property: transform;	
+}
+body > .site-wrap > header > .begin > img:hover /*pseudo-class*/
+{ 
+ -webkit-transform:rotate(360deg);
+ -moz-transform:rotate(360deg); 
+ -o-transform:rotate(360deg);
+}
+
+
+body > .site-wrap > header > .afbeelding {
+	float: left;
+	width: 50%;
+	margin-top: -55px;
+
+}
+body > .site-wrap > header > .afbeelding > img {
+	height: 690px;
+	width: 100%;
+}
+
+main > .hallo > h1{
+	font-family: "arial";
+	font-size: 2em;
+	text-shadow: 1px 1px 1px #000;
+}
+
+main > .hallo {
+	border: 6px solid white ;
+	box-shadow: 0 10px 10px -5px black;
+	padding: 0.5em;
+	margin-bottom: 15px;
+	margin: 8px;
+	background: rgba(88, 98, 163, .9);
+	margin-top: 670px;
+}
+
+main > form[method="post"] {
+	border: 6px solid white;
+	box-shadow: 0 10px 10px -5px black;
+	padding: 0.5em;
+	margin-bottom: 15px;
+	margin: 8px;
+	background: rgba(88, 98, 163, .9);
+}
+
+
+.blokje {
+	border: 6px solid white ;
+	box-shadow: 0 10px 10px -5px black;
+	padding: 0.5em;
+	margin-bottom: 0px;
+	margin: 8px;
+	background: rgba(88, 98, 163, .9);
+	margin-top: 30px;
+
+}
+.related {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+
+}
+.related > * {
+	border: 6px solid white ;
+	box-shadow: 0 10px 10px -5px black;
+	padding: 0.5em;
+	margin-bottom: 15px;
+	margin: 8px;
+	background: rgba(88, 98, 163, .9);
+	margin-top: 0px;
+}
+
+aside {
+	border: 6px solid white;
+	box-shadow: 0 10px 10px -5px black;
+	padding: 0.5em;
+	margin-bottom: 15px;
+	margin: 8px;
+	background: rgba(88, 98, 163, .9);
+	margin-top: 30px;
+
+
+}
+
+body > .site-wrap > footer {
+	border: 6px solid white;
+	box-shadow: 0 10px 10px -5px black;
+	padding: 0.5em;
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	font-size: 0.7em;
+	margin: 8px;
+	margin-bottom: 15px;
+	background: rgba(88, 98, 163, .9);
+	margin-top: 30px;
+
+
+}
+body > .site-wrap > footer > * {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 20%;
+	margin: 0.3em;
+}
+
+
+
+
+.is-invisible{
+	display: none;
+}
+.is-visible{
+	display: block;
+} 
+
+input {
+	width: 100%;
+	margin: 1em 0;
+}
+
+input[type="search"] /*attribute selector - overrule bovenstaand, zodat het searchfield niet ook 100% width aanneemt*/{
+
+width: 20%;
+}
+
+
+select {
+	width: 100%;
+}
+
+
+textarea {
+	width: 100%;
+} 
+
+
+/*----------mediaquary 1----------*/
+
+@media only screen and (max-width: 636px) and (min-width: 314px ) { 
+	nav {
+		display: none;
+	}
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+
+  overflow:auto;
+  overflow-y:scroll;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+  background: rgba(0,0,0,0.8);
+}
+
+
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: white;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(88,98,163,0.65) 100%);
+}
+
+
+.site-wrap {
+  /*  positionering en sizes styles*/
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Moet een achtergrond anders zie je de navigatie doorheen*/
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden; /*zorgt ervoor dat mijn beeld horizontaal fixed blijft*/
+  
+  
+}
+
+
+.nav-trigger {
+  /*  zorgt ervoor dat checkbox input niet ziet */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+
+ }
+
+label[for="nav-trigger"] {
+  /* positionering style */
+  position: fixed;
+  left: 15px; top: 15px; 
+  z-index: 2;
+  height: 60px;
+  width: 100%;
+
+  
+
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+
+}
+
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.3s; 
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+
+
+body > ul> h1{
+	font-size: 2em;
+	padding-top: 1em;
+}
+
+code {
+	padding: 2px;
+	background: #ddd;
+}
+
+/* reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+body> section:nth-child(1){
+	width: 100%;
+	background-color: white;
+	height: 50px;
+}
+.alles {
+	margin-top: 640px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+
+}
+body > .site-wrap > footer {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	padding-left: 2.5em;
+	padding-top: 1em;
+}
+
+body > .site-wrap > header > .menu > img {
+	margin-left: 4.4em;
+}
+body > .site-wrap > header > .begin > img {
+	margin-top: 3em;
+	width: 190px;
+	height: auto;
+}
+body > .site-wrap > header > .afbeelding {
+	display: none;
+	position: fixed;
+}
+body > .site-wrap > header > .begin {
+	color: rgba(88, 98, 163, .9);
+	float: left;
+	width: auto;
+	height: 5em;
+}
+
+body > .site-wrap > header > .begin > label {
+	margin-top: -5em;
+}
+
+.related > * {
+	width: 100%;
+	padding: 1.4em;
+}
+
+}
+	
+
+
+
+
+
+
+
+/*----------------------mediaquery 2---------------------------*/
+
+@media screen and (max-width: 1024px) and (min-width: 636px)  { 
+	nav {
+		display: none;
+	}
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+
+  overflow:auto;
+  overflow-y:scroll;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+  background: rgba(0,0,0,0.8);
+}
+
+
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: white;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(88,98,163,0.65) 100%);
+}
+
+
+
+.site-wrap {
+  /*  positionering en sizes styles*/
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Moet een achtergrond anders zie je de navigatie doorheen*/
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden; /*zorgt ervoor dat mijn beeld horizontaal fixed blijft*/
+  
+  
+}
+
+
+.nav-trigger {
+  /*  zorgt ervoor dat checkbox input niet ziet */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+
+ }
+
+label[for="nav-trigger"] {
+  /* positionering style */
+  position: fixed;
+  left: 15px; top: 15px; 
+  z-index: 2;
+  height: 60px;
+  width: 100%;
+
+
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+
+}
+
+
+.nav-trigger + label, .site-wrap {
+  transition: left 0.3s; 
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+
+
+body > ul> h1{
+	font-size: 2em;
+	padding-top: 1em;
+}
+
+code {
+	padding: 2px;
+	background: #ddd;
+}
+
+/* reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+body> section:nth-child(1){
+	width: 100%;
+	background-color: white;
+	height: 50px;
+}
+body > .site-wrap > header > .menu > nav {
+	display: none;
+}
+
+body > .site-wrap > header > .menu > img {
+	margin-left: 9.5em;
+}
+
+body > .site-wrap > header > .begin > img {
+	display: none;
+}
+
+.alles {
+	margin-top: 640px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+
+}
+
+.alles > article {
+	width: 100%;
+}
+
+body > .site-wrap > footer {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	padding-left: 2.5em;
+	padding-top: 1em;
+}
+
+
+.related > * {
+	width: 100%;
+	padding: 1.4em;
+}
+
+}
+
+
+
